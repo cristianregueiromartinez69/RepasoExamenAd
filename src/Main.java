@@ -12,6 +12,7 @@ public class Main {
         Serializar ser = new Serializar();
         LecturaEscrituraFicheros lef = new LecturaEscrituraFicheros();
         Crud cr = new Crud();
+        XMLFiles xf = new XMLFiles();
         /*
         List<Coches> cochesList = ser.getArrayCoches();
         String pathSerializable = "C:/Users/crm23/OneDrive/Escritorio/dam2Clase/Acceso a Datos/1Examen1EvaAD/coches.dat";
@@ -24,9 +25,8 @@ public class Main {
 
         List <Coches> cochesListPotentes = cr.selectCochesPontnetes(lef, pathTxt);
         cochesListPotentes.sort(Comparator.comparing(Coches::getPotencia).reversed());
-        for(Coches c : cochesListPotentes) {
-            System.out.println(c.toString());
-        }
+
+
 
 
 
